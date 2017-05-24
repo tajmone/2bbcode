@@ -187,6 +187,10 @@ function HorizontalRule()
   return "--------------------------------------------------------------------------------"
 end
 
+function LineBlock(ls)
+  return table.concat(ls, '\n')
+end
+
 function CodeBlock(s, attr)
   return "[code]\n" .. s .. '\n[/code]'
 end
